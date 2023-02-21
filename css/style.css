@@ -43,7 +43,6 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: azure;
 }
 
 header nav ul{
@@ -100,7 +99,7 @@ header nav ul li a:hover{
     font-size: 20px;
     color: black;
     background-color: white;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 30px;
     font-weight: bold;
 }
@@ -109,7 +108,7 @@ header nav ul li a:hover{
     vertical-align: middle;
 }
 
-.download a:last-child{
+.download a:nth-child(2){
     background-color: #23272A;
     color: white;
 }
@@ -127,8 +126,6 @@ main section:nth-child(even){
 
 section .container{
     display: flex;
-    height: 500px;
-    background-color: blue;
 }
 
 .container.reverse{
@@ -137,12 +134,50 @@ section .container{
 
 .image{
     width: 60%;
-    background-color: red;
 }
 
-.content{
+.image img{
+    width: 80%;
+    height: 100%;
+}
+
+
+.content {
     width: 40%;
-    background-color: rgb(255, 72, 72);
+    padding: 60px 0;
+}
+
+.description {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    line-height: 40px;
+    word-wrap: break-word;
+    width: 50%;
+}
+
+.special{
+    text-align: center;
+}
+
+.description.special{
+    width: 100%;
+}
+
+.details.special{
+    max-width: 700px;
+    padding-top: 20px;
+}
+
+section.special .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta .download a{
+    background-color: #8EA1E1;
+    color:white;
 }
 
 /* /MAIN */
