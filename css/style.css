@@ -248,10 +248,9 @@ footer{
 .footer-bottom{
     display: flex;
   justify-content: space-between;
-
-  /* DEBUG */
-  height: 100px;
-  background-color: rgb(255, 255, 174);
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: 30px;
 }
 
 
