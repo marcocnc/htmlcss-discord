@@ -5,15 +5,35 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
+
 header{
-    background-color: aqua;
+    background-color: #3161E0;
     height: 80px;
+}
+
+header section.container{
+    background-color: #3161E0;
 }
 
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.button{
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+header nav ul li a,
+.text{
+    color: white;
 }
 
 /* HEADER */
@@ -48,11 +68,50 @@ header nav ul li a:hover{
     justify-content: center;
     align-items: center;
     height: 500px;
-    background-color: lightblue;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 .jumbotron .text{
     width: 40%;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#intro{
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.download{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.download a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.download a:first-child{
+    vertical-align: middle;
+}
+
+.download a:last-child{
+    background-color: #23272A;
+    color: white;
 }
 
 /* MAIN */
