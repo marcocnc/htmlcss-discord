@@ -31,7 +31,7 @@ header section.container{
     font-weight: bold;
 }
 
-header nav ul li a,
+a,
 .text{
     color: white;
 }
@@ -54,11 +54,11 @@ header nav ul li{
     margin: 0 20px;
 }
 
-header nav ul li a{
+a{
     text-decoration: none;
 }
 
-header nav ul li a:hover{
+a:hover{
     text-decoration: underline;
 }
 
@@ -189,22 +189,60 @@ footer{
 
 .footer-top{
     display: flex;
-
-    background-color: rgb(45, 45, 45);
-    height: 300px;
 }
 
 .social{
     width: calc(100% / 3);
-    height: 100%;
-    background-color: yellow;
+}
+
+.social, .menucol{
+    padding: 50px 0;
+} 
+
+.social h2, .menucol h3{
+    padding-bottom: 10px;
+    color: #6478BB;
+}
+
+.social img{
+    width:30px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.socialcol{
+    color:white;
+    width: 150px;
+}
+
+.language{
+    padding: 20px 0;
+}
+
+#arrow{
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.language span{
+    font-size: 14px;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
 }
 
 .menucol{
     width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-    background-color: rgb(252, 252, 112);
-    border: 1px solid black;
+}
+
+.menucol a{
+    padding: 5px 0;
 }
 
 .footer-bottom{
